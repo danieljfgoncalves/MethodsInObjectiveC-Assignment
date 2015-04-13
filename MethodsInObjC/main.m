@@ -11,7 +11,17 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        [porsche initWithModel:@"Porsche"];
+        [porsche initWithModel:@"Porsche" mileage:42000.0];
+        
+        // Python/Java/C++
+        porsche.drive("Home", "Airport");
+        
+        // Objective-C
+        [porsche driveFromOrigin:@"Home" toDestination:@"Airport"];
+        
+        
+        
     }
     return 0;
 }
