@@ -45,6 +45,13 @@
 + (Car *)carWithModel:(NSString *)aModel mileage:(double)theMileage;
 
 // Singleton methods
-+ (Car *)sharedCar;
++ (Car *)sharedCar;     
+
+@property (copy) NSString *model;
+
+- (void)startEngine;
+- (void)driveForDistance:(NSNumber *)theDistance;
+- (void)turnByAngle:(NSNumber *)theAngle
+            quickly:(NSNumber *)useParkingBrake;
 
 @end
